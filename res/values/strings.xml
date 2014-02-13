@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_about">About</string>
+    <string name="action_new_search">New Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_locations">Add everyone\'s locations</string>
+    <string name="address">Address: </string>
+    <string name="address_example">123 Smith St, Sydney</string>
+    <string name="add_text_location">Add</string>
+    <string name="app_name">MeetingApp</string>
+    <string name="call_number">Call number</string>
+    <string name="check_open">Does the place need to be open now?</string>
+    <string name="enter_keyword">Keywords: </string>
+    <string name="enter_max_price">Max Price:</string>
+    <string name="enter_min_price">Min Price:</string>
+    <string name="enter_radius">Radius: </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="image_description">Place Photo</string>
+    <string name="keyword">Keyword</string>
+    <string name="loading_details">Loading details and images&#8230;</string>
+    <string name="map_or_type_input">or type the locations</string>
+    <string name="max_price">Is there a maximum price level you\'re after?</string>
+    <string name="min_price">Is there a minimum price level you\'re after?</string>
+    <string name="navigate_here">Address: </string>
+    <string name="next_page">Next Page</string>
+    <string name="not_available">Not available :(</string>
+    <string name="open_now">Yes, it needs to be open now </string>
+    <string name="phone_number">Phone Number: </string>
+    <string name="pick_category">Pick a category</string>
+    <string name="pick_keyword">Narrow your search with keywords</string>
+    <string name="pick_location">Pick Location From A Map</string>
+    <string name="pick_prices">Pick the minimum and maximum price levels you\'re okay with</string>
+    <string name="pick_radius">How far do you mind going?</string>
+    <string name="place_map">Place Map</string>
+    <string name="preference_file_key">com.example.meetingapp.PREFERENCE_FILE_KEY</string>
+    <string name="radius">Radius</string>
+    <string name="rating">Rating</string>
+    <string name="search_text">Search for a meeting place  </string>
+    <string name="selected_category">com.example.meetingapp.SELECTED_CATEGORY</string>
+    <string name="share">Share with friends</string>
+    <string name="show_friends">You and your friends\' locations:</string>
+    <string name="show_map">Show Map</string>
+    <string name="show_results">Possible locations:</string>
+    <string name="start_navigation">Start navigation to this place.</string>
+    <string name="title_activity_add_locations">AddLocationsActivity</string>
+    <string name="title_activity_map_results">MapResultsActivity</string>
+    <string name="title_activity_options">OptionsActivity</string>
+    <string name="title_activity_pick_category">PickCategoryActivity</string>
+    <string name="title_activity_pick_location">PickLocationActivity</string>
+    <string name="title_activity_show_details">ShowDetailsActivity</string>
+    <string name="title_activity_show_results">ShowResultsActivity</string>
+
+
+</resources>

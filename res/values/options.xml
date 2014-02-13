@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prices">
+        <item>Free</item>
+        <item>Inexpensive</item>
+        <item>Moderate</item>
+        <item>Expensive</item>
+        <item>Very expensive</item>
+    </string-array>
+    
+    <string-array name="categories">
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Bar</item>
+        <item>Bowling Alley</item>
+        <item>Cafe</item>
+        <item>Casino</item>
+        <item>Establishment</item>
+        <item>Food</item>
+        <item>Library</item>
+        <item>Meal Takeaway</item>
+        <item>Movie Theater</item>
+        <item>Museum</item>
+        <item>Night Club</item>
+        <item>Park</item>
+        <item>Restaurant</item>
+        <item>Shopping Mall</item>
+        <item>Stadium</item>
+        <item>University</item>
+        <item>Zoo</item>
+    </string-array>
+</resources>

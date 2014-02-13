@@ -1,0 +1,318 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionsActivity" >
+    
+    <ScrollView
+        android:id="@+id/options"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/next_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            
+            <!-- Section for picking a category. -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:background="#AAAAAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/pick_category"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#888888"/>
+                
+                <Spinner
+                    android:id="@+id/category_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+                </Spinner>
+            </LinearLayout>
+            
+            <!-- Section for adding users' locations. -->
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#DEDEDE"
+                tools:context=".MainActivity" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            
+                <TextView
+                    android:background="#AAAAAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/add_locations"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />    
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#888888"
+                    android:layout_marginBottom="10dp" />
+                
+                <Button
+                    android:id="@+id/pick_location"
+                    android:drawableRight="@drawable/ic_action_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/pick_location" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dip"
+                        android:background="#888888"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/map_or_type_input" />
+                    
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dip"
+                        android:background="#888888"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    
+                    <AutoCompleteTextView
+                        android:hint="@string/address_example"
+                        android:id="@+id/enter_location"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    
+                    <Button
+                        android:id="@+id/add_text_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="@string/add_text_location" />
+                </LinearLayout>
+            
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    
+                    <TextView
+                        android:background="#DDDDDD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#444444" 
+                        android:textStyle="bold"
+                        android:text="@string/show_friends" />
+                    
+                    <ListView
+                        android:id="@+id/locations_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#DEDEDE" />
+            
+            <!-- Add keywords. -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:background="#AAAAAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/pick_keyword"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />    
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#888888" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_keyword" />
+                    
+                    <EditText
+                        android:id="@+id/keyword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/keyword" />
+                </LinearLayout>
+            </LinearLayout>
+                
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#DEDEDE" />
+                
+            <!-- Input prices here. -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:background="#AAAAAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/pick_prices"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />    
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#888888"
+                    android:layout_marginBottom="10dp" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_min_price" />
+                    
+                    <Spinner
+                        android:id="@+id/min_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_max_price" />
+                    
+                    <Spinner
+                        android:id="@+id/max_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>    
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#DEDEDE" />
+            
+            <!-- Section for allowing the user to select whether the place
+                 has to be open at the moment or not.  -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:background="#AAAAAA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/check_open"
+                    android:textColor="#444444"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#888888" />
+                
+                <CheckBox
+                    android:id="@+id/opennow_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/open_now" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/next_page"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next_page"
+        android:onClick="onClick" />
+</RelativeLayout>        

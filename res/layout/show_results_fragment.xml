@@ -1,0 +1,47 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_above="@+id/bottom_button"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/show_map"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        
+        <TextView
+            android:id="@+id/place_header"
+            android:background="#BBBBBB"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/show_results"
+            android:textColor="#444444" 
+            android:textStyle="bold" />
+    
+        <ListView
+            android:id="@+id/results_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_map"
+        android:drawableRight="@drawable/ic_action_map"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_map" />
+</RelativeLayout>     
